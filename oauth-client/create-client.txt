@@ -1,0 +1,1 @@
+docker-compose -f quickstart.yml exec hydra     hydra create client     --endpoint http://127.0.0.1:4445     --grant-type client_credentials --token-endpoint-auth-method client_secret_basic   --format json     --scope read:temp --scope write:temp   --audience http://localhost:5999
